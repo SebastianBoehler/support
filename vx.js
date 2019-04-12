@@ -47,7 +47,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
     message.guild.createChannel(`ticket-${message.author.id}`, "text").then(c => {
         let role = message.guild.roles.find("name", "Moderator");
         let role2 = message.guild.roles.find("name", "@everyone");
-        let role2 = message.guild.roles.find("name", "Support");
+        let role3 = message.guild.roles.find("name", "Support");
         c.overwritePermissions(role, {
             SEND_MESSAGES: true,
             READ_MESSAGES: true

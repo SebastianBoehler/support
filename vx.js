@@ -8,17 +8,17 @@ function clean(text) {
         return text;
 }
 
-var prefix = "v";
-var token = " ";
+var prefix = "?";
+var token = "NTY2MTk4MjA4MzA5NDkzNzY5.XLBfUg.uNzo07ankydSQm0Y9fKZfN_V4CA";
 
 client.on("ready", () => {
   console.log("Vulnix | Logged in! Server count: ${client.guilds.size}");
-  client.user.setGame(`vhelp / vnew | ${client.guilds.size} servers`);
+  client.user.setGame(`?help / ?new for support`);
 });
 
 client.on("guildCreate", (guild) => {
-client.user.setGame(`vhelp / vnew | ${client.guilds.size} servers`);
-    guild.owner.user.send(`Hello! I'm Vulnix!\nThanks for adding me to your guild!\n\nView all of my commands with \`vhelp\`.\nLearn more about me with \`vabout\`.\n\n**About:**Vulnix is a simple Discord support ticket bot that aims to provide easy to use mod and support functions for all servers!\n\n\Enjoy! ~Vulnix Teamn\*Need help? Wanna chill?*  Join the Vulnix Discord! https://discord.gg/HqNPFTC`);
+client.user.setGame(`?help / ?new for support`);
+    guild.owner.user.send(`Hello! I'm RetailSZN Support Bot!\nThanks for adding me to your guild!\n\nView all of my commands with \`?help\`.\nLearn more about me with \`?about\`.\n\n**About:**Vulnix is a simple Discord support ticket bot that aims to provide easy to use mod and support functions for all servers!\n\n\Enjoy! ~Vulnix Teamn\*Need help? Wanna chill?*  Join the Vulnix Discord! https://discord.gg/HqNPFTC`);
 });
 
 client.on("message", (message) => {
@@ -26,9 +26,9 @@ client.on("message", (message) => {
 
   if (message.content.toLowerCase().startsWith(prefix + `help`)) {
     const embed = new Discord.RichEmbed()
-    .setTitle(`:mailbox_with_mail: Vulnix Help`)
+    .setTitle(`:mailbox_with_mail: Support`)
     .setColor(0xCF40FA)
-    .setDescription(`Hello! I'm Vulnix, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
+    .setDescription(`Hello! I'm the Support Bot, the Discord bot for super cool support ticket stuff and more! Here are my commands:`)
     .addField(`Tickets`, `[${prefix}new]() > Opens up a new ticket and tags the Support Team\n[${prefix}close]() > Closes a ticket that has been resolved or been opened by accident`)
     .addField(`Other`, `[${prefix}help]() > Shows you this help menu your reading\n[${prefix}ping]() > Pings the bot to see how long it takes to react\n[${prefix}about]() > Tells you all about Vulnix`)
     message.channel.send({ embed: embed });

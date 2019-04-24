@@ -71,7 +71,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         .setTimestamp();
         c.send({ embed: embed });
     }).catch(console.error);
-    channel.setParent(`570592756515340289`);
+    message.channel.setParent(`570592756515340289`);
 
 }
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {

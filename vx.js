@@ -52,6 +52,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
             SEND_MESSAGES: true,
             READ_MESSAGES: true,
             ATTACH_FILES: true
+            READ_MESSAGE_HISTORY: true,
         });
         c.overwritePermissions(role2, {
             SEND_MESSAGES: false,
@@ -62,7 +63,8 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         c.overwritePermissions(message.author, {
             SEND_MESSAGES: true,
             READ_MESSAGES: true,
-            ATTACH_FILES: true
+            ATTACH_FILES: true,
+            READ_MESSAGE_HISTORY: true
         });
          c.overwritePermissions(role3, {
             SEND_MESSAGES: true,

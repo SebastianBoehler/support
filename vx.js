@@ -71,7 +71,8 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         .setTimestamp();
         c.send({ embed: embed });
     }).catch(console.error);
-    guild.channel.setParent(`570592756515340289`);
+    await channel.setParent(`570592756515340289`)
+
 }
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {
     if (!message.channel.name.startsWith(`ticket-`)) return message.channel.send(`You can't use the close command outside of a ticket channel.`);

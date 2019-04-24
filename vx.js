@@ -70,7 +70,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         .addField(`Hey @${message.author.tag} !`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
         .setTimestamp();
         c.send({ embed: embed });
-        c.channel.setParent(`570592756515340289`);
+        c.setParent(`570592756515340289`);
     }).catch(console.error);
 }
 if (message.content.toLowerCase().startsWith(prefix + `close`)) {

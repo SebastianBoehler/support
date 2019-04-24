@@ -71,7 +71,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         .setTimestamp();
         c.send({ embed: embed });
     }).catch(console.error);
-    message.channels.find("name", "ticket-${message.author.id}").setParent(`570592756515340289`);
+    message.channels.find("name", "ticket-$" + {message.author.id}).setParent(`570592756515340289`);
 
 
 }

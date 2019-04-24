@@ -9,7 +9,7 @@ function clean(text) {
 }
 
 var prefix = "?";
-var token = "NTY2MTk4MjA4MzA5NDkzNzY5.XLBfUg.uNzo07ankydSQm0Y9fKZfN_V4CA";
+var token = "NTY2MTk4MjA4MzA5NDkzNzY5.XMB0kw.nhHFAEzl-KOG_9dQiELCx2QuVF0";
 
 client.on("ready", () => {
   console.log("Logged in! Server count: ${client.guilds.size}");

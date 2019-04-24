@@ -68,7 +68,7 @@ if (message.content.toLowerCase().startsWith(prefix + `new`)) {
         message.channel.send(`:white_check_mark: Your ticket has been created, #${c.name}.`);
         const embed = new Discord.RichEmbed()
         .setColor(0xCF40FA)
-        .addField(`Hey @${message.author.tag}!`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
+        .addField(`Hey @${message.author.tag} !`, `Please try explain why you opened this ticket with as much detail as possible. Our **Support Team** will be here soon to help.`)
         .setTimestamp();
         c.send({ embed: embed });
     }).catch(console.error);
